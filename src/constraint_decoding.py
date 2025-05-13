@@ -186,34 +186,3 @@ String, Greedy, Array, Math, Two Pointers<|im_end|>'''
     label_tokens = [tokenizer.encode(label, add_special_tokens=False) for label in label_set]
     batch_results = batch_classification(input_texts, model, tokenizer, label_tokens, max_new_tokens=50, separator=label_separator, consrtained_decoding=consrtained_decoding)
     return batch_results 
-
-if __name__ == "__main__":
-    # 前缀模板
-    prefix_template = "分类结果: "
-    # 加载模型和Tokenizer
-    model_name = "/public/home/shaoyifeng/models/qwens/Qwen2.5-7B-Instruct"
-    model = AutoModelForCausalLM.from_pretrained(
-        model_name,
-        torch_dtype="float16",
-        device_map="auto"
-    )
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-
-    # 定义标签集合和分隔符
-    label_set = ["标签1", "标签2", "标签3", "标签4"]  # 替换为你的实际标签集合
-    label_separator = ", "  # 标签之间的分隔符
-    label_tokens = [tokenizer.encode(label, add_special_tokens=False) for label in label_set]
-
-    # 输入文本批处理
-    input_texts = [
-        "这是一段新闻文本1。",
-        "这是关于科技的文本2。",
-        "这是一篇关于体育的文本3。"
-    ]  # 批处理的输入文本
-    # 执行批量分类
-    batch_results = batch_classification(input_texts, model, tokenizer, label_tokens)
-
-    # 输出结果
-    for i, (input_text, result) in enumerate(zip(input_texts, batch_results)):
-        print(f"输入文本 {i+1}: {input_text}")
-        print(f"分类结果 {i+1}: {result}\n")

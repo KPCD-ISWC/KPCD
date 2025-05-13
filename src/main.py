@@ -46,17 +46,7 @@ def main(model_name=None, topk=None, data_name=None):
     print(f'P: \n{P}\nR: \n{R}\nF1: \n{F1}\nHamming loss:\n{hamming_loss}')
     
 if __name__ == "__main__":
-    # model_path_list = ['/public/home/shaoyifeng/models/qwens/Qwen2.5-0.5B-Instruct', '/public/home/shaoyifeng/models/qwens/Qwen2.5-3B-Instruct', '/public/home/shaoyifeng/models/qwens/Qwen2.5-7B-Instruct', '/public/home/shaoyifeng/models/qwens/Qwen2.5-14B-Instruct']
-    # model_path_list = ['/public/home/shaoyifeng/LLaMA-Factory/saves/llama3-8b/full/sft', '/public/home/shaoyifeng/LLaMA-Factory/saves/llama3-8b/lora/sft_full']
     dataset_list = ['codeforces', 'leetcode', 'newcoder']
-    # model_path = model_path_list[2] 
-    # for dataset in dataset_list[2:]:
-    #     main(model_name=model_path, topk=0, data_name=dataset)
-    # for model_path in model_path_list:
-    #     for dataset in dataset_list[:]:
-    #         main(model_name=model_path, topk=0, data_name=dataset)
-            # main(model_name=model_path, topk=5, data_name=dataset)
-    
     for dataset in dataset_list[:]:
         main(model_name="gpt-4o-2024-11-20", topk=5, data_name=dataset)
 
