@@ -1,0 +1,4 @@
+Instruction:
+Given a detailed description of a programming challenge, your task is to analyze the quesiton and identify the necessary knowledge points and skills required to solve the problem.
+All of the potential knowledge points and skills includes:%s
+Your response should clearly select which of these points of programming knowledge and skills from the list are necessary for solving this specific challenge.

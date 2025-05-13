@@ -1,0 +1,71 @@
+0	String
+1	Stack
+2	Greedy
+3	Monotonic Stack
+4	Array
+5	Math
+6	Counting
+7	Game Theory
+8	Simulation
+9	Dynamic Programming
+10	Memoization
+11	Matrix
+12	Enumeration
+13	Prefix Sum
+14	Backtracking
+15	Hash Table
+16	Design
+17	Binary Search
+18	Sliding Window
+19	Tree
+20	Depth-First Search
+21	Union Find
+22	Bit Manipulation
+23	Bitmask
+24	Number Theory
+25	Two Pointers
+26	Sorting
+27	Breadth-First Search
+28	Graph
+29	Divide and Conquer
+30	Heap (Priority Queue)
+31	Quickselect
+32	Recursion
+33	Binary Indexed Tree
+34	Suffix Array
+35	Topological Sort
+36	Shortest Path
+37	Trie
+38	Hash Function
+39	Binary Tree
+40	Ordered Set
+41	Rolling Hash
+42	Combinatorics
+43	Line Sweep
+44	Queue
+45	Geometry
+46	String Matching
+47	Monotonic Queue
+48	Segment Tree
+49	Data Stream
+50	Merge Sort
+51	Linked List
+52	Minimum Spanning Tree
+53	Binary Search Tree
+54	Strongly Connected Component
+55	Randomized
+56	Brainteaser
+57	Doubly-Linked List
+58	Probability and Statistics
+59	Interactive
+60	Concurrency
+61	Biconnected Component
+62	Counting Sort
+63	Iterator
+64	Bucket Sort
+65	Radix Sort
+66	Rejection Sampling
+67	Reservoir Sampling
+68	Eulerian Circuit
+69	Database
+70	Shell
